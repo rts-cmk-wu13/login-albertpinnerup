@@ -1,14 +1,17 @@
 import { z } from "zod/v4";
 
-export const ListItemSchema = z.object({
+export const SecretsItemSchema = z.object({
     id: z.number(),
-    name: z.string(),
+    quote: z.string(),
+    author: z.string(),
+    origin: z.string(),
+    
 });
 
-export const ListSchema = z.array(ListItemSchema);
+export const SecretsSchema = z.array(SecretsItemSchema);
 
-export type ListItem = z.infer<typeof ListItemSchema>;
-export type List = z.infer<typeof ListSchema>;
+export type SecretsItem = z.infer<typeof SecretsItemSchema>;
+export type Secrets = z.infer<typeof SecretsSchema>;
 
 export const ContactSchema = z.object({
     name: z.string().min(1, "Name is required"),

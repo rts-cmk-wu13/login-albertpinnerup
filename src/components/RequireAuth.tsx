@@ -8,8 +8,6 @@ export default function RequireAuth({ children } : React.PropsWithChildren) {
 
     console.log(location)
 
-    
-
     if(!token){
         // no token - redirect to login
         return <Navigate to="/login" state={{ from: location }} replace/>
