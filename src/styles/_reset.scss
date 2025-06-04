@@ -1,0 +1,75 @@
+
+@use './variables' as var;
+
+/* CSS Document */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    color-scheme: light dark;
+    position: relative;
+}
+
+html {
+    color: light-dark(var.$dark-font-color, var.$light-font-color);
+    background-color: light-dark(var.$light-background-color, var.$dark-background-color)
+ }
+
+body {
+    font-size: 1rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#root {
+    width: 100%;
+}
+
+p {
+    padding-bottom: 1em;
+}
+
+/* RWD: */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: light-dark(var.$dark-font-color, var.$light-font-color);
+}
+
+button {
+    font-family: 'Open sans';
+    font-size: 1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+    outline: none;
+}
+
+[data-dark="true"] {
+    color-scheme: dark;
+}
+
+[data-dark="false"] {
+    color-scheme: light;
+}
+

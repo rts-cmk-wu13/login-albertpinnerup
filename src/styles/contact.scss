@@ -1,0 +1,19 @@
+
+
+.formgroup {
+    display: flex;
+    flex-direction: column;
+
+    &__label {
+        color: orange
+    }
+
+    .error {
+        color: red
+    }
+
+    .error:empty {
+        display: none;
+    }
+
+}
