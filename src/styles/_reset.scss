@@ -9,8 +9,6 @@
 }
 
 :root {
-
-    color-scheme: light dark;
     position: relative;
 }
 
@@ -23,10 +21,12 @@ body {
     font-size: 1rem;
     max-width: 1280px;
     margin: 0 auto;
+    height: 100vh;
 }
 
 #root {
     width: 100%;
+    height: 100%;
 }
 
 p {
@@ -63,13 +63,5 @@ button {
     line-height: inherit;
     border: none;
     outline: none;
-}
-
-[data-dark="true"] {
-    color-scheme: dark;
-}
-
-[data-dark="false"] {
-    color-scheme: light;
 }
 

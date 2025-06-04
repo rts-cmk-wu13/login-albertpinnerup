@@ -12,9 +12,6 @@ function Layout({ children }: LayoutProps) {
             <main>
               {children || <Outlet />}
             </main>
-            <footer>
-                <small>2025 my app</small>
-            </footer>
         </>
     );
 }

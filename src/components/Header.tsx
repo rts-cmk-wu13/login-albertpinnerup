@@ -1,6 +1,7 @@
 import { useLocation } from "react-router";
 import Navigation from "./Navigation";
 import LogoutButton from "./LogoutButton";
+import bird from "../assets/emojione_bird.svg";
 
 export default function Header() {
 
@@ -8,14 +9,7 @@ export default function Header() {
 
     return  (
         <header>
-            <h1>My App</h1>
-            {location.pathname !== '/login' && (
-                <>
-                <Navigation />
-                <LogoutButton />
-                </>
-            )}
-            
+            <img src={bird} alt="" />
         </header>
     )
 
