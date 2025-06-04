@@ -1,7 +1,5 @@
 import { useLoaderData } from "react-router";
 import type { SecretsItem } from "../schemas/schemas";
-import LogoutButton from "../components/login_logout/LogoutButton";
-
 export default function Secrets() {
     const data = useLoaderData() as SecretsItem[];
 
